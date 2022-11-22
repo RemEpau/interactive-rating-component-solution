@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/assets/favicon-32x32.png"
+    />
+    <title>Solution | Interactive rating component</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="/src/js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <img src="/src/assets/icon-star.svg" alt="Rating star" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form action="">
+          <div class="btn-container">
+            <div>
+              <input type="radio" name="rating" value="1" class="btn" />
+              <label for="rating">1</label>
+            </div>
+            <div>
+              <input type="radio" name="rating" value="2" class="btn" />
+              <label for="rating">2</label>
+            </div>
+            <div>
+              <input type="radio" name="rating" value="3" class="btn" checked />
+              <label for="rating">3</label>
+            </div>
+            <div>
+              <input type="radio" name="rating" value="4" class="btn" />
+              <label for="rating">4</label>
+            </div>
+            <div>
+              <input type="radio" name="rating" value="5" class="btn" />
+              <label for="rating">5</label>
+            </div>
+          </div>
+          <input type="submit" value="Submit" class="btn-submit" id="submit" />
+        </form>
+      </div>
+      <div class="thank-container hidden">
+        <img src="/src/assets/illustration-thank-you.svg" alt="Thank you" />
+        <p>
+          You selected <span id="rating"></span>
+          out of 5
+        </p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+      <div id="overlay"></div>
+    </main>
+  </body>
+</html>

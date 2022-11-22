@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background: hsl(216deg, 12%, 8%);
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+p {
+  line-height: 1.8;
+}
+
+main {
+  background: linear-gradient(hsl(213deg, 19%, 18%), #202020);
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  height: 25rem;
+  max-width: 25rem;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-container {
+  height: 25rem;
+  max-width: 25rem;
+}
+.main-container img {
+  background: rgba(149, 158, 172, 0.2);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.main-container h1 {
+  color: hsl(0deg, 0%, 100%);
+  margin: 2rem 0 1rem;
+}
+.main-container p {
+  color: hsl(217deg, 12%, 63%);
+  margin-bottom: 1rem;
+}
+.main-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main-container .btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-container .btn-container div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .btn-container div label {
+  position: absolute;
+  margin-top: 0.2rem;
+  color: hsl(0deg, 0%, 100%);
+  pointer-events: none;
+}
+.main-container .btn-container input {
+  width: 3rem;
+  height: 3rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(149, 158, 172, 0.2);
+  transition: background 0.25s ease-in-out, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+.main-container .btn-container input:hover {
+  background: hsl(217deg, 12%, 63%);
+  transform: scale(110%);
+}
+.main-container .btn-container input:checked {
+  background: hsl(25deg, 97%, 53%);
+  transform: scale(120%);
+}
+.main-container input[type=submit] {
+  font-size: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(25deg, 97%, 53%);
+  padding: 1rem 0 0.8rem;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+.main-container input[type=submit]:hover {
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.thank-container {
+  max-width: 25rem;
+  height: 25rem;
+}
+.thank-container img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+.thank-container p:first-of-type {
+  background: rgba(251, 116, 19, 0.1);
+  color: hsl(25deg, 97%, 53%);
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  margin: 0 auto 1rem;
+  padding-top: 0.1rem;
+  width: 12rem;
+}
+.thank-container h2 {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.thank-container p {
+  display: block;
+  color: hsl(217deg, 12%, 63%);
+  text-align: center;
+  padding-top: 0.25rem;
+}
+
+#overlay {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  border-radius: 0.625rem;
+  background: linear-gradient(hsl(213deg, 19%, 18%), #202020);
+  width: 100%;
+  height: 25rem;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
